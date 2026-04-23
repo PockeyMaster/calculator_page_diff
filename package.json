@@ -1,0 +1,49 @@
+{
+  "name": "page-diff-crawler",
+  "version": "1.0.0",
+  "description": "规格接口对比爬虫服务（Egg.js + DDD）",
+  "private": true,
+  "scripts": {
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "start": "eggctl start --daemon --title=page-diff-crawler",
+    "stop": "eggctl stop --title=page-diff-crawler",
+    "test": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint . --ext .ts",
+    "tsc": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "crawler",
+    "diff",
+    "compare",
+    "eggjs",
+    "ddd",
+    "mongodb",
+    "playwright"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@eggjs/scripts": "^4.0.0",
+    "axios": "^1.12.2",
+    "egg": "^3.34.0",
+    "mongodb": "^6.19.0",
+    "playwright": "^1.52.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.13.10",
+    "@typescript-eslint/parser": "^8.57.2",
+    "egg-bin": "^6.13.0",
+    "egg-mock": "^5.15.1",
+    "egg-ts-helper": "^2.1.1",
+    "eslint": "^9.21.0",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "egg": {
+    "typescript": true
+  }
+}
