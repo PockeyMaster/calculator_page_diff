@@ -16,8 +16,8 @@ export default (_appInfo: EggAppInfo): PowerPartial<EggAppConfig> => {
     locale: 'zh-CN',
     loginUrl: 'https://auth.huaweicloud.com/authui/login.html#/login2',
     region: 'cn-north-4',
-    username: process.env.HWC_USERNAME || 'shengzhong',
-    password: process.env.HWC_PASSWORD || 'Portal_2025s',
+    username: process.env.HWC_USERNAME || '',
+    password: process.env.HWC_PASSWORD || '',
   };
 
   return config;
